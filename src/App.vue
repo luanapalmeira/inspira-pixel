@@ -1,11 +1,11 @@
 <script setup>
 import Header from "./components/Header.vue";
+import Hero from "./components/Hero.vue";
 </script>
 
 <template>
   <Header />
-
-  <h2>InspiraPixel</h2>
+  <Hero />
 </template>
 
 <style scoped lang="scss"></style>
