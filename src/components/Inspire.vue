@@ -32,7 +32,7 @@ carregarImagens();
     flex-direction: column;
     width: 75%;
     margin-top: 6rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     margin-left: 14rem;
 
     h2 {
