@@ -13,9 +13,9 @@ import { Icon } from "@iconify/vue";
             <Icon class="icone-1" icon="iconamoon:search-thin" />
           </a>
         </li>
-        <li><a href="">Início</a></li>
-        <li><a href="">Galeria</a></li>
-        <li><a href="">Favoritos</a></li>
+        <li><a href="#" target="_blank">Início</a></li>
+        <li><a href="#" target="_blank">Galeria</a></li>
+        <li><a href="#" target="_blank">Favoritos</a></li>
         <li>
           <a href="">
             <Icon class="icone-2" icon="octicon:person-24" />

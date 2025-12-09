@@ -13,7 +13,6 @@ const trocarCor = () => {
 
 <template>
     <div class="card">
-        <!-- Pegar o ícone do coração na biblioteca depois -->
         <button class="iconeCoracao" @click="trocarCor">
             <Icon icon="fluent:heart-32-filled" width="35" height="35" :class="{ clicou: likeAtivo }" />
         </button>
@@ -27,6 +26,10 @@ const trocarCor = () => {
     height: 50vh;
     position: relative;
 
+    &:hover {
+      transform: scale(1.05);
+    }
+
     button {
         position: absolute;
         top: 12px;
@@ -35,6 +38,7 @@ const trocarCor = () => {
         border: none;
         font-size: 1.5rem;
         color: #FFFFFF;
+        cursor: pointer;
 
         .clicou {
             color: #E1306C;
