@@ -44,4 +44,36 @@
         width: 27vw;
     }
 }
+
+@media (max-width: 768px) {
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 60vh;
+        margin-top: 3rem;
+
+        div {
+            width: 100%;
+            text-align: center;
+
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+
+                span {
+                    font-size: 2.5rem;
+                }
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+
+        img {
+            width: 75vw;
+        }
+    }
+}
 </style>
