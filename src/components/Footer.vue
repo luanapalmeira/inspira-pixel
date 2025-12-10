@@ -29,7 +29,7 @@ import { Icon } from "@iconify/vue";
         </div>
     </section>
 
-    <div class="redes-socias">
+    <div class="redes-sociais">
         <ol>
             <li>
                 <a href="#" target="_blank">
@@ -143,7 +143,7 @@ section {
     }
 }
 
-.redes-socias {
+.redes-sociais {
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -164,6 +164,64 @@ section {
                 transition: 0.3;
             }
         }
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        margin-left: 0;
+        height: 50vh;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-bottom: 3rem;
+
+        article {
+            width: 62%;
+            text-align: center;
+
+            h4 {
+                font-size: 1rem;
+            }
+
+            ul {
+                gap: 5px;
+
+                li {
+                    font-size: 0.8rem;
+
+                    a {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        .newsletter {
+            margin-left: 0;
+            width: 70%;
+            align-items: center;
+
+            h4 {
+                font-size: 1rem;
+
+            }
+
+            input::placeholder {
+                font-size: 0.8rem;
+            }
+
+            button {
+                width: 40%;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .redes-sociais {
+        display: none;
     }
 }
 </style>
