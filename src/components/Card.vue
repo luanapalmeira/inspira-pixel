@@ -51,4 +51,11 @@ const trocarCor = () => {
         height: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    .card {
+        width: 42vw;
+        height: 36vh;
+    }
+}
 </style>

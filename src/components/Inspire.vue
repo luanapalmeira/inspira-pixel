@@ -8,9 +8,18 @@ import axios from "axios";
 const imagens = ref([]);
 
 async function carregarImagens() {
-    const resposta = await axios.get("https://picsum.photos/v2/list?page=2&limit=12");
+    // Detecta mobile
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+    // Define quantas imagens buscar
+    const limite = isMobile ? 6 : 12;
+
+    const resposta = await axios.get(
+        `https://picsum.photos/v2/list?page=2&limit=${limite}`
+    );
+
     imagens.value = resposta.data;
-    console.log(resposta);
+    console.log("Carregou", limite, "imagens");
 }
 
 carregarImagens();
@@ -48,6 +57,18 @@ carregarImagens();
         flex-wrap: wrap;
         gap: 2rem;
         justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .inspire {
+        width: 93%;
+        margin-left: 1rem;
+
+        h2 {
+            font-size: 1.5rem;
+            margin-left: 0;
+        }
     }
 }
 </style>
