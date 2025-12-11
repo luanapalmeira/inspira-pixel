@@ -14,7 +14,7 @@ const trocarCor = () => {
 <template>
     <div class="card">
         <button class="iconeCoracao" @click="trocarCor">
-            <Icon icon="fluent:heart-32-filled" width="35" height="35" :class="{ clicou: likeAtivo }" />
+            <Icon icon="fluent:heart-32-filled" :class="{ clicou: likeAtivo }" />
         </button>
         <img :src="imagem" alt="Imagens ilustrativas de paisagens">
     </div>
@@ -36,7 +36,7 @@ const trocarCor = () => {
         right: 12px;
         background-color: transparent;
         border: none;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: #FFFFFF;
         cursor: pointer;
 
@@ -56,6 +56,10 @@ const trocarCor = () => {
     .card {
         width: 42vw;
         height: 36vh;
+    }
+
+    button {
+        font-size: 1.5rem;
     }
 }
 </style>
